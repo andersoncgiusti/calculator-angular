@@ -71,7 +71,7 @@ export class AppComponent {
   }
 
   results() {
-
+    alert('hello words')
   }
 
 }

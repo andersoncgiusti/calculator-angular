@@ -8,8 +8,13 @@
 
 body{
     background-color: whitesmoke;
-    padding: 40px 0;
+    padding: 40px 0 !important;
     cursor: pointer;
+}
+
+button:hover{
+  background-color: #dae3e5 !important;
+  color: black !important;
 }
 
 .calculator {
