@@ -71,7 +71,7 @@ export class AppComponent {
   }
 
   results() {
-    alert('hello words')
+    this.result = eval(this.result);
   }
 
 }
