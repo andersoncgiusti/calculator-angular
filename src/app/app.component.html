@@ -1,39 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Calculator JavaScript</title>
-</head>
-<body>
 
-    <div class="calculator">
-        <input type="text" class="display" readonly>
-        <div class="calculator-buttons">
-            
-            <button id="color"></button>
-            <button id="color"></button>
-            <button class="btn-clear">AC</button>
-            <button class="btn-num">/</button>
-            <button class="btn-num">7</button>
-            <button class="btn-num">8</button>
-            <button class="btn-num">9</button>
-            <button class="btn-num">*</button>
-            <button class="btn-num">4</button>
-            <button class="btn-num">5</button>
-            <button class="btn-num">6</button>
-            <button class="btn-num">-</button>
-            <button class="btn-num">1</button>
-            <button class="btn-num">2</button>
-            <button class="btn-num">3</button>
-            <button class="btn-num">+</button>
-            <button id="color"></button>
-            <button class="btn-num">0</button>
-            <button id="color"></button>
-            <button class="btn-eq">=</button>
-        </div>
+<div class="calculator">
+  <div type="text" class="display">
+    {{ result }}
+
+  </div>
+    <div class="calculator-buttons">
+
+      <button id="color"></button>
+      <button id="color"></button>
+      <button class="btn-clear" (click)="clear()">AC</button>
+      <button class="btn-num" (click)="share()">/</button>
+      <button class="btn-num" (click)="seven()">7</button>
+      <button class="btn-num" (click)="eight()">8</button>
+      <button class="btn-num" (click)="nine()">9</button>
+      <button class="btn-num" (click)="multiplication()">*</button>
+      <button class="btn-num" (click)="for()">4</button>
+      <button class="btn-num" (click)="five()">5</button>
+      <button class="btn-num" (click)="six()">6</button>
+      <button class="btn-num" (click)="subtract()">-</button>
+      <button class="btn-one" (click)="one()">1</button>
+      <button class="btn-two" (click)="two()">2</button>
+      <button class="btn-num" (click)="three()">3</button>
+      <button class="btn-num" (click)="sum()">+</button>
+      <button id="color"></button>
+      <button class="btn-num" (click)="zero()">0</button>
+      <button id="color"></button>
+      <button class="btn-eq" (click)="results()">=</button>
     </div>
-</body>
-</html>
+</div>
+
