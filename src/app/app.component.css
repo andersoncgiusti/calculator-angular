@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: whitesmoke;
-    padding: 40px 0 !important;
-    cursor: pointer !important;
-}
-
 button:hover{
   background-color: #dae3e5 !important;
   color: black !important;
@@ -39,6 +33,11 @@ button:hover{
     font-size: 4rem;
     overflow: hidden;
     border-radius: 5px;
+}
+
+input {
+    border: 0px;
+    text-align: right;
 }
 
 .calculator-buttons{

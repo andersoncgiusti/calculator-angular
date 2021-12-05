@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 export class AppComponent {
   title = 'Calculator Angular';
 
+  //created the variable result so I can write it in the input and call the eval function to perform the calculation
   result: string = '';
 
   one() {
@@ -85,8 +86,8 @@ export class AppComponent {
           confirmButtonText: 'OK',
           confirmButtonColor: '#3f4555',
         })
-        return 
-      }
+        return         
+      } 
     this.result = String(this.result)    
   } catch(e) {
     Swal.fire({
