@@ -9,7 +9,7 @@
 body{
     background-color: whitesmoke;
     padding: 40px 0 !important;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 button:hover{
@@ -59,11 +59,9 @@ button:hover{
     border: 2px solid #676a75;
 }
 
-
-
 #color {
-    background-color: #3f4555;
-    border: none;
+    background-color: #3f4555 !important;
+    border: none !important;
 }
 
 
