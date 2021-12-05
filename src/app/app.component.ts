@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -71,7 +72,33 @@ export class AppComponent {
   }
 
   results() {
+  try {
     this.result = eval(this.result);
-  }
 
+      if (!this.result) {
+        Swal.fire({
+          icon: 'error',
+          iconColor: '#3f4555',
+          title: 'Oops...',
+          text: 'INSERT A VALUE ',
+          showConfirmButton: true,
+          confirmButtonText: 'OK',
+          confirmButtonColor: '#3f4555',
+        })
+        return 
+      }
+    this.result = String(this.result)    
+  } catch(e) {
+    Swal.fire({
+      icon: 'error',
+      iconColor: '#3f4555',
+      title: 'Oops...',
+      text: 'THERE WAS SOMETHING WRONG',
+      showConfirmButton: true,
+      confirmButtonText: 'OK',
+      confirmButtonColor: '#3f4555',
+    })
+    return 
+    }
+  }
 }
